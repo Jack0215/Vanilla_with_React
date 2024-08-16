@@ -1,4 +1,4 @@
-import Accordions from "./components/accordion";
+import Accordions from "./components/01_accordion";
 export const routePaths = [
   "/",
   // "/test1",
