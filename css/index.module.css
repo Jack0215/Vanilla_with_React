@@ -1,0 +1,34 @@
+.Accordions .container {
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Accordions .tab {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.Accordions .tab::before {
+  content: "+";
+  margin: 0 8px 0 -5px;
+}
+
+.Accordions .description {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  background-color: #eff;
+}
+
+.Accordions .item.current .tab {
+  background-color: #ace;
+}
+
+.Accordions .item.current .tab::before {
+  content: "-";
+}
