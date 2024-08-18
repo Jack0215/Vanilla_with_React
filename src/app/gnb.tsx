@@ -9,7 +9,6 @@ import {
   routes,
 } from "@/routes";
 import Link from "next/link";
-import style from "./gnb.module.scss";
 import { useParams } from "next/navigation";
 import classNames from "classnames";
 const ParentGnbItem = ({
@@ -65,12 +64,12 @@ export default function Gnb() {
   const { item = [] } = useParams();
   const current = ["", ...item].join("/") as ROUTE_PATH;
   return (
-    <aside className={style.aside}>
+    <aside >
       <h1>
         UI 요소 모음
         <sub>Jack</sub>
       </h1>
-      <ul className={style.gnbSide}>
+      <ul >
         {gnbRootList.map((r) => (
           <GnbItem key={r.key} route={r} currentPath={current} />
         ))}

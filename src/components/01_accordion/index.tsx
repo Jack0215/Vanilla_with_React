@@ -9,11 +9,11 @@ const Accordions = () => {
   return (
     <div className={cx("Accordions")}>
       <h2>아코디언</h2>
-      {/* <Accordion1 />
+      <Accordion1 />
       <Accordion2 />
       <Accordion3 />
       <Accordion4V />
-      <Accordion5 /> */}
+      <Accordion5 />
       <Accordion6 />
     </div>
   );
